@@ -27,7 +27,7 @@ function displayEmployees(employeeData) {
     return `
       <div class="card" data-index="${index}">
         <img class="card__avatar" src="${picture.large}" />
-        <div class="text-container">
+        <div class="card__text-container">
           <h2 class="card__name">${first} ${last}</h2>
           <p class="card__email">${email}</p>
           <p class="card__address">${location.city}</p>
