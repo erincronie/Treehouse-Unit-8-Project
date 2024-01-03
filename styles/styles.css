@@ -2,6 +2,14 @@ body {
   background-color: rgb(251, 251, 251);
 }
 
+.overlay {
+  display: none;
+}
+
+.overlay:not(.hidden) {
+  display: flex;
+}
+
 .header__title {
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
@@ -35,6 +43,7 @@ body {
 }
 .card:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 .card__avatar {
   border-radius: 50%;

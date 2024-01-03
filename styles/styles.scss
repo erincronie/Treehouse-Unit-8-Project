@@ -2,6 +2,15 @@ body {
     background-color: rgb(251, 251, 251);
 }
 
+.overlay {
+    display: none;
+  }
+  
+  .overlay:not(.hidden) {
+    display: flex;
+  }
+  
+
 .header {
 
     &__title {
@@ -37,6 +46,7 @@ body {
     transition: transform 0.3s ease-in-out;
         &:hover{
             transform: scale(1.05);
+            cursor: pointer;
         }
 
     &__avatar {
