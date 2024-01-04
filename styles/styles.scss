@@ -26,11 +26,9 @@ body {
     
 }
   
-
 .header {
     &__title {
         text-transform: uppercase;
-        
         font-weight: 100;
         color: rgb(70, 70, 70);
         font-size: 1rem;
@@ -87,9 +85,9 @@ body {
 }
 
 .modal {
-    width: 375px;
     margin: 15% auto auto;
-    position: relative;
+    width: 350px;
+    height: 500px;
     text-align: center;
     background: #fff;
     border: 1px solid #778;
