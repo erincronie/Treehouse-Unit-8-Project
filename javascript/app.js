@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function generateModalHTML(employee) {
-        let { name, dob, phone, email, location: { city, street, state, postcode }, picture } = employee;
+        let { name, dob, phone, email, location: { street, city, state, postcode }, picture } = employee;
         let date = new Date(dob.date);
 
         return `
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p class="modal__address">${city}</p>
                 <hr />
                 <p class="modal__phone">${phone}</p>
-                <p class="modal__address">${street}, ${state} ${postcode}</p>
+                <p class="modal__address">${street.number} ${street.name}, ${state} ${postcode}</p>
                 <p class="modal__birthday">Birthday: ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p>
             </div>
         `;
