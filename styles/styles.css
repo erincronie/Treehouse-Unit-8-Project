@@ -1,13 +1,25 @@
 body {
   background-color: rgb(251, 251, 251);
+  position: relative;
 }
 
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
   display: none;
 }
 
 .overlay:not(.hidden) {
   display: flex;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
 }
 
 .header__title {
@@ -60,4 +72,21 @@ body {
 .card__email, .card__address {
   color: grey;
   margin: 0.5rem 0;
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+.modal__close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

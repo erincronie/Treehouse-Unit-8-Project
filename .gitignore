@@ -1,0 +1,4 @@
+# Ignore Sass-generated CSS files
+*.css
+*.css.map
+ 
