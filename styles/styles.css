@@ -1,17 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
-  background-color: rgb(251, 251, 251);
+  background: rgb(251, 251, 251);
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .overlay {
+  background-color: rgba(100, 100, 100, 0.4);
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(100, 100, 100, 0.4);
-  display: none;
 }
 
 .overlay:not(.hidden) {
@@ -28,7 +33,7 @@ body {
   font-weight: 100;
   color: rgb(70, 70, 70);
   font-size: 1rem;
-  margin: 2rem;
+  padding: 3rem 2rem;
 }
 
 .main {
@@ -44,11 +49,12 @@ body {
 
 .card {
   display: flex;
+  justify-content: space-around;
   background: #fff;
   align-items: center;
   border: 1px solid #778;
   border-radius: 5px;
-  width: 400px;
+  width: 25rem;
   margin: 1rem;
   padding: 1rem 1.5rem;
   transition: transform 0.3s ease-in-out;
@@ -59,7 +65,7 @@ body {
 }
 .card__avatar {
   border-radius: 50%;
-  height: 100px;
+  height: 6.25rem;
   margin: 1rem;
 }
 .card__text-container {
@@ -74,7 +80,7 @@ body {
   margin: 0.5rem 0;
 }
 
-.modal {
+.modal__content {
   margin: 15% auto auto;
   width: 350px;
   height: 500px;
@@ -82,12 +88,21 @@ body {
   background: #fff;
   border: 1px solid #778;
   border-radius: 5px;
-  padding: 30px 20px;
+  padding: 5rem 1.25rem 0 1.25rem;
+}
+.modal__main {
+  display: flex;
+  flex-direction: column;
 }
 .modal__close {
-  position: absolute;
-  right: 15px;
-  top: 5px;
+  position: relative;
+  top: 100px;
+  background: none;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+.modal__close:hover {
+  transform: scale(1.05);
   cursor: pointer;
 }
 .modal__avatar {
