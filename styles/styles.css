@@ -80,6 +80,9 @@ body {
   margin: 0.5rem 0;
 }
 
+.modal {
+  position: absolute;
+}
 .modal__content {
   margin: 15% auto auto;
   width: 350px;
@@ -96,7 +99,8 @@ body {
 }
 .modal__close {
   position: relative;
-  top: 100px;
+  top: 6.25rem;
+  left: 10rem;
   background: none;
   border: none;
   transition: transform 0.3s ease-in-out;

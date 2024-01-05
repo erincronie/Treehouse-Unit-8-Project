@@ -88,6 +88,8 @@ body {
 }
 
 .modal {
+    position: absolute;
+
     &__content {
         margin: 15% auto auto;
         width: 350px;
@@ -106,7 +108,8 @@ body {
 
     &__close {
         position: relative;
-        top: 100px;
+        top: 6.25rem;
+        left: 10rem;
         background: none;
         border: none;
         @include hover;
